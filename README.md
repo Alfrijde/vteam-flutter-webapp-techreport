@@ -20,6 +20,6 @@ bygga en snygg applikation på ett enkelt sätt.
 
 ## Källor
 
-[Flutter on the web](https://flutter.dev/multi-platform/web)
-[Stackoverflow-post om att välja port för Flutter](https://stackoverflow.com/questions/58248277/how-to-specify-a-port-number-while-running-flutter-web)
-[Flutter på Wikipedia](https://en.wikipedia.org/wiki/Flutter_(software))
+- [Flutter on the web](https://flutter.dev/multi-platform/web)
+- [Stackoverflow-post om att välja port för Flutter](https://stackoverflow.com/questions/58248277/how-to-specify-a-port-number-while-running-flutter-web)
+- [Flutter på Wikipedia](https://en.wikipedia.org/wiki/Flutter_(software))
