@@ -19,8 +19,10 @@ Guiden följer dessa [instruktioner från Flutter] (https://docs.flutter.dev/get
 ### Innan du installerar
 
 Skapa en mapp "development" i din hem-mapp för din användare i din linuxmiljö. Det underlättar senare i installeringsprocessen.
-Kör följande installation så du har alla verktyg som behövs, kör gärna en update också så du har de senaste versionerna installerade i din miljÖ:
+Kör följande installation så du har alla verktyg som behövs, kör gärna en update också så du har de senaste versionerna installerade i din miljö:
+
 `sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa`
+
 För att kunna köra utvecklingsmiljön behöver du ha google Chrome installerat på din dator.
 I VS Code installerar du exstentions för Flutter och Dart. 
 
@@ -50,4 +52,4 @@ Jag använde VS Code för att installera Flutter då jag tyckte det var det enkl
 
 - [Flutter on the web](https://flutter.dev/multi-platform/web)
 - [Stackoverflow-post om att välja port för Flutter](https://stackoverflow.com/questions/58248277/how-to-specify-a-port-number-while-running-flutter-web)
-- [Flutter på Wikipedia](https://en.wikipedia.org/wiki/Flutter_(software))
+- [Om Flutter på Wikipedia](https://en.wikipedia.org/wiki/Flutter_(software))
