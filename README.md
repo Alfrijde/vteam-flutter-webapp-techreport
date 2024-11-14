@@ -14,7 +14,7 @@ bygga en snygg applikation på ett enkelt sätt.
 
 ## Installation
 
-Guiden följer dessa [instruktioner från Flutter] (https://docs.flutter.dev/get-started/install/linux/web), för att installera Flutter i din linuxmiljö.
+Guiden följer dessa [instruktioner från Flutter](https://docs.flutter.dev/get-started/install/linux/web), för att installera Flutter i din linuxmiljö.
 
 ### Innan du installerar
 
