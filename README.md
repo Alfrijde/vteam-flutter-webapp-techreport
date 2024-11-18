@@ -5,12 +5,14 @@ Rapporten kommer gå igenom hur man kommer igång med Flutter som webb app och v
 
 ## Kort om Flutter
 
-Flutter är ett Ui Software development kit skapat av Google och släpptes 2018. Till skillnad måt andra UI ramverk 
+Flutter är ett UI Software development kit skapat av Google och släpptes 2018. Till skillnad måt andra UI ramverk 
 tillhandahåller Flutter en egen renderings motor vilket gör att en app byggd med flutter kan enkelt användas på 
-olika platformar untan ändringar i koden. En Flutter-app bygger på widgets, en widget bygger en komponent i UIn 
+olika platformar utan ändringar i koden. En Flutter-app bygger på widgets, en widget bygger en komponent i UIn 
 liknande komponenter i React.
 Flutter-appar skrivs i Dart och har ett stort grundbibliotek för olika typer av widgets och funktioner för att kunna
 bygga en snygg applikation på ett enkelt sätt.
+
+### Cross platform
 
 ## Installation
 
@@ -20,7 +22,8 @@ Följ dessa [instruktioner från Flutter](https://docs.flutter.dev/get-started/i
 
 Skapa en mapp "development" i din hem-mapp för din användare i din linuxmiljö. Det underlättar senare steg i installeringsprocessen.
 
-För att kunna köra utvecklingsmiljön behöver du ha Google Chrome installerat på din dator. Du behöver också installera tillägget Dart Debug Extension för att kunna köra din app i Chorme.
+För att kunna köra utvecklingsmiljön behöver du ha Google Chrome installerat på din dator. Du behöver också installera tillägget "Dart Debug Extension" för att kunna köra din app i Chorme.
+
 I VS Code installerar du exstentions för Flutter och Dart. 
 
 ## Starta ett Flutter-projekt
@@ -56,6 +59,8 @@ Det här alternativet fungerade inte för mig, men är bra att känna till om ma
 - Det sista argumenet är den port du önskar att din app startar på och kan vara vilken port som helst som passar dig bäst.
 - Om du nu startar en debug session så ska appen starta på din valda port.
 
+![launchfilens utseende](/assets/launch-file.png)
+
 ### Alt 2: Inställning i VS Code
 
 Den här inställningen fungerade för mig, men den gäller för alla flutter-appar som startas i VS Code. Så om du har flera flutter-projekt igång så kommer alla startas på samma port.
@@ -64,8 +69,9 @@ Den här inställningen fungerade för mig, men den gäller för alla flutter-ap
 - Sök efter "Dart: Flutter Run Additional Args"
 - Skriv in `--web-port=8082` eller din önskade port i fältet.
 - Klicka på "Add item"
-- Starat en ny debugg session och appen startar på din valda port
-
+- Starta en ny debugg session och appen startar på din valda port
+ 
+ ![Add item vyn](/assets/add-item.png)
 
 ## Källor
 
