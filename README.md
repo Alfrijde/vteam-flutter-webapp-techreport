@@ -14,37 +14,30 @@ bygga en snygg applikation på ett enkelt sätt.
 
 ## Installation
 
-Guiden följer dessa [instruktioner från Flutter](https://docs.flutter.dev/get-started/install/linux/web), för att installera Flutter i din linuxmiljö.
+Följ dessa [instruktioner från Flutter](https://docs.flutter.dev/get-started/install/linux/web), för att installera Flutter i din linuxmiljö. Välj alternativet för installation med VS Code.
 
 ### Innan du installerar
 
-Skapa en mapp "development" i din hem-mapp för din användare i din linuxmiljö. Det underlättar senare i installeringsprocessen.
-Kör följande installation så du har alla verktyg som behövs, kör gärna en update också så du har de senaste versionerna installerade i din miljö:
+Skapa en mapp "development" i din hem-mapp för din användare i din linuxmiljö. Det underlättar senare steg i installeringsprocessen.
 
-`sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa`
-
-För att kunna köra utvecklingsmiljön behöver du ha google Chrome installerat på din dator.
+För att kunna köra utvecklingsmiljön behöver du ha Google Chrome installerat på din dator. Du behöver också installera tillägget Dart Debug Extension för att kunna köra din app i Chorme.
 I VS Code installerar du exstentions för Flutter och Dart. 
 
-
-### Visual Studio Code
-
-Jag använde VS Code för att installera Flutter då jag tyckte det var det enklaste. För att allt ska fungera som det ska behöver du ha VS Code 1.77 eller senare. 
-
-1. Starta VS Code
-2. Öppna Command Palette, ctrl+shift+P.
-3. Skriv in flutter och välj Flutter: New Project
-4. VS Code hittar nu inte Flutter SDK, välj "Download SDK"
-5. Om VS Code vill att du ska välja en Flutter-mall så tryck på esc.
-6. 
-
-
-
-
-
-### 
-
 ## Starta ett Flutter-projekt
+
+- Starta VS Code via ubuntu/linuxterminal
+- Välj Commando palette eller tryck på ctrl+shift+p
+- Välj Flutter: New project
+- Du får flera olika appliaktioner att välja bland, jag rekommenderar "Application" eller "Empty Application". Application ger en hel app med testning och kommentarer, kommentarerna kan vara en bra hjälp på vägen. Vill du ha en mindre app och bara se att allt fungerr välj Empty Application.
+- Projektet startas i mappen du stod i när du öppnade VS Code.
+- Det kan ta en liten stund att starta projektet då det är många filer som ska skapas.
+- När allt är fördigt har du flera olika mappar och filer. Den viktigaste just nu är lib/main.dart. Där ligger all kod till din app.
+- Starta debug och välj Google Chrome bland Avaiable devices när du får frågan.
+- Debuggen tar också en stund att starta och flera portar kommer att öppnas. Du får ett meddelande om att din app hör öppnats i en autogenererad port via VS Code.
+- Öppna  ett fönster med rätt port och starta Dart Debug genom att trycka på iconen och välja "Open Devtools".
+- Nu ska du se en web app med en räknare som ökar i antal när du trycker på plus-knappen.
+- För att se att du kan uppdatera din app kan du prova byta färgtema i main.dart. Det som är speciellt med Flutter är att ändringarna i din app sker i realtid utan att du behöver ladda om sidan eller starta om debuggen. Prova byta färg några gånger och se hur appen byter utseende. 
+- Om det inte uppdateras som det ska kan du prova trycka på den lilla blixten, "Hot Reload", i debug menyn, då ska uppdateringen gå igenom.
 
 ## Välj port för utveckling
 
