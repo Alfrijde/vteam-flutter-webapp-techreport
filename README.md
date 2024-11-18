@@ -41,8 +41,35 @@ I VS Code installerar du exstentions för Flutter och Dart.
 
 ## Välj port för utveckling
 
+Varje gång flutter startar en debug session så används en ny autogenererad port. När man bara ska utveckla en ensam applikation är det inte något problem, men när kopplingar ska göras med backend eller andra system så är det bra att veta vilken port appen kommer öppnas på och att det är samma varje gång.
+
+Det finns två sätt att göra det här på som jag provade, varav ett fungerade för mig.
+
+### Alt 1: Med en launch.json-fil
+
+Det här alternativet fungerade inte för mig, men är bra att känna till om man vill kunna styra andra detaljer kring debugging eller hur appen startas. Mer information finns [här](https://dartcode.org/docs/launch-configuration/).
+
+- Under degugg-iconen i menyn längst till vänster finns en knapp "Create a launch.json-file".
+- Nu ska en ny mapp, ".vscode", dykt upp balnd dina filer, under den ligger "launch.json". Du kan se ett exempel i det här repot på hur det ser ut.
+- Under den första konfiguartionen lägger du till följande:
+`"args": ["-d", "chrome", "--web-port", "8082" ]`
+- Det sista argumenet är den port du önskar att din app startar på och kan vara vilken port som helst som passar dig bäst.
+- Om du nu startar en debug session så ska appen starta på din valda port.
+
+### Alt 2: Inställning i VS Code
+
+Den här inställningen fungerade för mig, men den gäller för alla flutter-appar som startas i VS Code. Så om du har flera flutter-projekt igång så kommer alla startas på samma port.
+
+- Gå in på "Inställningar/Settings" i VS Code.
+- Sök efter "Dart: Flutter Run Additional Args"
+- Skriv in `--web-port=8082` eller din ösnkade port i fältet.
+- Klicka på "Add item"
+- Starat en ny debugg session och appen startar på din valda port
+
+
 ## Källor
 
 - [Flutter on the web](https://flutter.dev/multi-platform/web)
+- [Launch configaration for Dart/Flutter](https://dartcode.org/docs/launch-configuration/)
 - [Stackoverflow-post om att välja port för Flutter](https://stackoverflow.com/questions/58248277/how-to-specify-a-port-number-while-running-flutter-web)
 - [Om Flutter på Wikipedia](https://en.wikipedia.org/wiki/Flutter_(software))
