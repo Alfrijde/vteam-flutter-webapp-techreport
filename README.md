@@ -1,6 +1,6 @@
-# Teknisk rapport
+# Flutter webb app och val av utvecklings port
 
-Det här är en teknisk rapport för kursen Virtuell team vid Blekinge tekniska högskola. 
+Det här är en teknisk rapport för kursen Virtuellt team vid Blekinge tekniska högskola. 
 Rapporten kommer gå igenom hur man kommer igång med Flutter som webb app och väljer port för utveckling av appen.
 
 ## Kort om Flutter
@@ -62,7 +62,7 @@ Den här inställningen fungerade för mig, men den gäller för alla flutter-ap
 
 - Gå in på "Inställningar/Settings" i VS Code.
 - Sök efter "Dart: Flutter Run Additional Args"
-- Skriv in `--web-port=8082` eller din ösnkade port i fältet.
+- Skriv in `--web-port=8082` eller din önskade port i fältet.
 - Klicka på "Add item"
 - Starat en ny debugg session och appen startar på din valda port
 
