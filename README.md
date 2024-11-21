@@ -14,6 +14,8 @@ bygga en snygg applikation på ett enkelt sätt.
 
 ### Cross platform
 
+Något som gör Flutter väldigt användbart är att samma kodbas kan användas för både webb- och mobilappar, och även olika operativsystem. Du kan alltså bygga en app som funkar för många olika plattformar. Samma app kan provköras med olika typer av emulatorer som kan installeras via Andriod Studio. I det här rapporten används bara Google Chrome som emulator.
+
 ## Installation
 
 Följ dessa [instruktioner från Flutter](https://docs.flutter.dev/get-started/install/linux/web), för att installera Flutter i din linuxmiljö. Välj alternativet för installation med VS Code.
@@ -82,7 +84,7 @@ Du kan också starta en debug session i terminalen. Nackdelen är att du inte f�
 `flutter run -d web-server --web-port 8082`
 3. Nu startas en debug session på den port du angav.
 
-För mig fungerade inte Hot reload som det skulle när jag staratde appen via terminalen utan jag var tvungen att ladda om möntsret där appen var. Det är något som Flutter har varnat för när man gör webapplikationer att just Hot relaod inte alltid funkar på det sätt som det gör mas andra typer av appar.
+För mig fungerade inte Hot reload som det skulle när jag startade appen via terminalen utan jag var tvungen att ladda om fönstret där appen var. Det är något som Flutter har varnat för när man gör webapplikationer att just Hot relaod inte alltid funkar på det sätt som det gör med andra typer av appar.
 
  ![Utskrift i terminalen](/assets/terminal.png)
 
