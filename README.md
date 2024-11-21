@@ -59,7 +59,6 @@ Det här alternativet fungerade inte för mig, men är bra att känna till om ma
 4. Det sista argumenet är den port du önskar att din app startar på och kan vara vilken port som helst som passar dig bäst.
 5. Om du nu startar en debug session så ska appen starta på din valda port.
 
-byt bild
 ![launchfilens utseende](/assets/launch-file.png)
 
 ### Alt 2: Inställning i VS Code
@@ -85,9 +84,11 @@ Du kan också starta en debug session i terminalen. Nackdelen är att du inte f�
 
 För mig fungerade inte Hot reload som det skulle när jag staratde appen via terminalen utan jag var tvungen att ladda om möntsret där appen var. Det är något som Flutter har varnat för när man gör webapplikationer att just Hot relaod inte alltid funkar på det sätt som det gör mas andra typer av appar.
 
+ ![Utskrift i terminalen](/assets/terminal.png)
+
 ## Reflektioner
 
-Flutter är främst utvecklat för att köras som native appar men har blivit bättre att även använda som webbapplikationer både för stor och liten skärm. Det var spännande att se att de olika lösningarna gav olika resulatat och hade olika för- och nackdelar. Jag kommer att använda alternativ 2 så länge och göra några till försök att få till launch-file. Det borde vara det bästa sättet när det väl funkar. 
+Flutter är främst utvecklat för att köras som native appar men har blivit bättre att även använda som webbapplikationer både för stor och liten skärm. Det var spännande att se att de olika lösningarna gav olika resulatat och hade olika för- och nackdelar. Det enklaste sättet att få till en port på tappade en viktig fördel med just hot relaod, men om man har många projekt med flutter igång så vill man inte att alla starar på samma port. Jag kommer att använda alternativ 2 så länge och göra några till försök att få till launch-file. Det borde vara det bästa sättet när det väl funkar. 
 
 
  
