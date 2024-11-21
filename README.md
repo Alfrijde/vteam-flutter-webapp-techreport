@@ -1,4 +1,4 @@
-# Flutter webbapp och val av utvecklings port
+# Flutter webbapp och val av utvecklingsport
 
 Det här är en teknisk rapport för kursen Virtuellt team vid Blekinge tekniska högskola. 
 Rapporten kommer gå igenom hur man kommer igång med Flutter som webbapplikation och väljer port för utveckling av appen.
@@ -6,8 +6,8 @@ Rapporten kommer gå igenom hur man kommer igång med Flutter som webbapplikatio
 ## Kort om Flutter
 
 Flutter är ett UI Software development kit skapat av Google och släpptes 2018. Till skillnad mot andra UI ramverk 
-tillhandahåller Flutter en egen renderings motor vilket gör att en app byggd med flutter kan enkelt användas på 
-olika platformar utan ändringar i koden. En Flutter-app bygger på widgets, en widget bygger en komponent i UIn 
+tillhandahåller Flutter en egen renderingsmotor vilket gör att en app byggd med Flutter kan enkelt användas på 
+olika platformar utan ändringar i koden. En Flutter-app bygger på widgets, en widget bygger en komponent i UIn, 
 liknande komponenter i React.
 Flutter-appar skrivs i Dart och har ett stort grundbibliotek för olika typer av widgets och funktioner för att kunna
 bygga en snygg applikation på ett enkelt sätt.
@@ -46,7 +46,7 @@ I VS Code installerar du exstentions för Flutter och Dart.
 
 ## Välj port för utveckling
 
-Varje gång flutter startar en debug session så används en ny autogenererad port. När man bara ska utveckla en ensam applikation är det inte något problem, men när kopplingar ska göras med backend eller andra system så är det bra att veta vilken port appen kommer öppnas på och att det är samma varje gång.
+Varje gång Flutter startar en debug session så används en ny autogenererad port. När man bara ska utveckla en ensam applikation är det inte något problem, men när kopplingar ska göras med backend eller andra system så är det bra att veta vilken port appen kommer öppnas på och att det är samma varje gång.
 
 Det finns tre sätt att göra det här på som jag provade med olika resultat.
 
@@ -65,7 +65,7 @@ Det här alternativet fungerade inte för mig, men är bra att känna till om ma
 
 ### Alt 2: Inställning i VS Code
 
-Den här inställningen fungerade för mig, men den gäller för alla flutter-appar som startas i VS Code. Så om du har flera flutter-projekt igång så kommer alla startas på samma port.
+Den här inställningen fungerade för mig, men den gäller för alla Flutter-appar som startas i VS Code. Så om du har flera Flutter-projekt igång så kommer alla startas på samma port.
 
 1. Gå in på "Inställningar/Settings" i VS Code.
 2. Sök efter "Dart: Flutter Run Additional Args"
@@ -79,7 +79,7 @@ Den här inställningen fungerade för mig, men den gäller för alla flutter-ap
 
 Du kan också starta en debug session i terminalen. Nackdelen är att du inte får upp debugkontrollpanelen där Hot reload-knappen finns utan måste köra alla kommandon fortsatt i terminalen. För att göra en Hot reload i terminalen används kommandot "r" eller "R". Fördelen är att du kan byta åprt när du vill utan att behöva göra några inställningar. Det här allternativet fungerar också bra om appen ska öppnas via ett script eller liknande. 
 
-1. Öpnna en terminal och gå till mappen där ditt flutter-projekt finns. 
+1. Öpnna en terminal och gå till mappen där ditt Flutter-projekt finns. 
 2. Skriv in förkjande kommand o med den port du vill använda 
 `flutter run -d web-server --web-port 8082`
 3. Nu startas en debug session på den port du angav.
@@ -90,7 +90,7 @@ För mig fungerade inte Hot reload som det skulle när jag startade appen via te
 
 ## Reflektioner
 
-Flutter är främst utvecklat för att köras som native appar men har blivit bättre att även använda som webbapplikationer både för stor och liten skärm. Det var spännande att se att de olika lösningarna gav olika resulatat och hade olika för- och nackdelar. Det enklaste sättet att få till en port på tappade en viktig fördel med just hot relaod, men om man har många projekt med flutter igång så vill man inte att alla starar på samma port. Jag kommer att använda alternativ 2 så länge och göra några till försök att få till launch-file. Det borde vara det bästa sättet när det väl funkar. 
+Flutter är främst utvecklat för att köras som native appar men har blivit bättre att även använda som webbapplikationer både för stor och liten skärm. Det var spännande att se att de olika lösningarna gav olika resulatat och hade olika för- och nackdelar. Det enklaste sättet att få till en port på tappade en viktig fördel med just hot relaod, men om man har många projekt med Flutter igång så vill man inte att alla starar på samma port. Jag kommer att använda alternativ 2 så länge och göra några till försök att få till launch-file. Det borde vara det bästa sättet när det väl funkar. 
 
 
 ## Källor
