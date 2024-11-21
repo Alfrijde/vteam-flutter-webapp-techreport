@@ -1,11 +1,11 @@
-# Flutter webb app och val av utvecklings port
+# Flutter webbapp och val av utvecklings port
 
 Det här är en teknisk rapport för kursen Virtuellt team vid Blekinge tekniska högskola. 
-Rapporten kommer gå igenom hur man kommer igång med Flutter som webb app och väljer port för utveckling av appen.
+Rapporten kommer gå igenom hur man kommer igång med Flutter som webbapplikation och väljer port för utveckling av appen.
 
 ## Kort om Flutter
 
-Flutter är ett UI Software development kit skapat av Google och släpptes 2018. Till skillnad måt andra UI ramverk 
+Flutter är ett UI Software development kit skapat av Google och släpptes 2018. Till skillnad mot andra UI ramverk 
 tillhandahåller Flutter en egen renderings motor vilket gör att en app byggd med flutter kan enkelt användas på 
 olika platformar utan ändringar i koden. En Flutter-app bygger på widgets, en widget bygger en komponent i UIn 
 liknande komponenter i React.
@@ -14,7 +14,7 @@ bygga en snygg applikation på ett enkelt sätt.
 
 ### Cross platform
 
-Något som gör Flutter väldigt användbart är att samma kodbas kan användas för både webb- och mobilappar, och även olika operativsystem. Du kan alltså bygga en app som funkar för många olika plattformar. Samma app kan provköras med olika typer av emulatorer som kan installeras via Andriod Studio. I det här rapporten används bara Google Chrome som emulator.
+Något som gör Flutter väldigt användbart är att samma kodbas kan användas för både webb- och mobilappar, och även olika operativsystem. Du kan alltså bygga en app som funkar för många olika plattformar med samma kod. Samma app kan provköras med olika typer av emulatorer som kan installeras via Andriod Studio. I det här rapporten används endast Google Chrome som emulator.
 
 ## Installation
 
@@ -24,7 +24,7 @@ Följ dessa [instruktioner från Flutter](https://docs.flutter.dev/get-started/i
 
 Skapa en mapp "development" i din hem-mapp för din användare i din linuxmiljö. Det underlättar senare steg i installeringsprocessen.
 
-För att kunna köra utvecklingsmiljön behöver du ha Google Chrome installerat på din dator. Du behöver också installera tillägget "Dart Debug Extension" för att kunna köra din app i Chorme.
+För att kunna köra utvecklingsmiljön behöver du ha Google Chrome installerat på din dator. Du behöver också installera tillägget "Dart Debug Extension" för att kunna köra din app i Chrome.
 
 I VS Code installerar du exstentions för Flutter och Dart. 
 
@@ -92,8 +92,6 @@ För mig fungerade inte Hot reload som det skulle när jag startade appen via te
 
 Flutter är främst utvecklat för att köras som native appar men har blivit bättre att även använda som webbapplikationer både för stor och liten skärm. Det var spännande att se att de olika lösningarna gav olika resulatat och hade olika för- och nackdelar. Det enklaste sättet att få till en port på tappade en viktig fördel med just hot relaod, men om man har många projekt med flutter igång så vill man inte att alla starar på samma port. Jag kommer att använda alternativ 2 så länge och göra några till försök att få till launch-file. Det borde vara det bästa sättet när det väl funkar. 
 
-
- 
 
 ## Källor
 
